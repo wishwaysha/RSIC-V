@@ -32,7 +32,15 @@ Each of these ISAs has its own strengths and is used in various applications dep
 
 ---------
 ### Introduction to RISC 
-RISC stands for Reduced Instruction Set Computer. The instructions in this architecture are basic and are all of same size.   
-CISC stands for Complex Instruction Set Computer. The instructions in this architeuctre are complex and of high computation.  
+RISC stands for Reduced Instruction Set Computer. The instructions in this architecture are basic and are all of the same size.   
+CISC stands for Complex Instruction Set Computer. The instructions in this architecture are complex and of high computation.  
+The differences between RISC and CISC are shown  
+| CISC | RISC | 
+|------|------|
+| Many instructions are available which include basic and complex operations | Lesser number of instructions available for operations (basic ones) | 
+| Instructions can be of variable size | Fixed length of all instructions. Makes operation of ProgramCounter easier |
+| Many addressing modes available for instructions | Very Few addressing modes available (lesser opcodes) |
+| Manipulation done directly in memory | Load and Store method used for operations, hence works only on specified registers |
+| MUL 2:2,3:3 | LOAD A,2:2 <br /> LOAD B,3:3 <br /> PROD A,B <br /> STORE 2:2,A |  
 
 
