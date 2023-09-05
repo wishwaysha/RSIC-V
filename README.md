@@ -42,5 +42,13 @@ The differences between RISC and CISC are shown
 | Many addressing modes available for instructions | Very Few addressing modes available (lesser opcodes) |
 | Manipulation done directly in memory | Load and Store method used for operations, hence works only on specified registers |
 | MUL 2:2,3:3 | LOAD A,2:2 <br /> LOAD B,3:3 <br /> PROD A,B <br /> STORE 2:2,A |  
-
+--------
+The whole system can be understood as three parts    
+- *Application Software* - The C code written for the app. ( ex - The c code for a stop watch app)  
+- *System Software* - The code which interprets the Application software to produce machine level instructions as the final output
+- *Hardware* - The Processor (actual circuit)
+  
+The System Software can be elaborated as three major parts  
+- Operating system (OS) - Delas with tasks of process management, memory allocation etc
+- Complier - It converts the application software to instructions that 
 
