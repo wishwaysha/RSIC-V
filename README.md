@@ -48,7 +48,16 @@ The whole system can be understood as three parts
 - *System Software* - The code which interprets the Application software to produce machine level instructions as the final output
 - *Hardware* - The Processor (actual circuit)
   
-The System Software can be elaborated as three major parts  
-- Operating system (OS) - Delas with tasks of process management, memory allocation etc
-- Complier - It converts the application software to instructions that 
+The System Software can be elaborated as three major parts -   
+- Operating system (OS) - Deals with tasks of process management, memory allocation etc
+- Complier - It converts the application software to instructions that can be processed by the hardware. This set of instuctions that are available for computation is know as the **Instruction Set architecture (ISA)**. These instructions are also known as *assembly level code*. Hence the compiler is specific to the architecture.
+- Assembler - It converts the instructions to the respective opcodes and thereby to binary data aka *Machine level code*, which can be understood by the digital circuit.
 
+ ------
+ 
+### Instructions
+There are many type of instructions  
+- Pseudo Instructions - ex. mv li ret
+- Base Integer Instructions ( **RV64I** - *RISC-V,64 bit-integers*, **RV32I** - *32 bit integer*)
+- Multiply extension- ex. mulw divw ( **RV64M**)
+- Single precision floating point Instruction - instruction is usually starts with an f. Ex  
