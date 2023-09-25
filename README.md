@@ -44,20 +44,20 @@ The differences between RISC and CISC are shown
 | MUL 2:2,3:3 | LOAD A,2:2 <br /> LOAD B,3:3 <br /> PROD A,B <br /> STORE 2:2,A |  
 --------
 The whole system can be understood as three parts    
-- *Application Software* - The C code written for the app. ( ex - The c code for a stop watch app)  
-- *System Software* - The code which interprets the Application software to produce machine level instructions as the final output
+- *Application Software* - The C code written for the app. ( ex - The c code for a stopwatch app)  
+- *System Software* - The code which interprets the Application software to produce machine-level instructions as the final output
 - *Hardware* - The Processor (actual circuit)
   
-The System Software can be elaborated as three major parts -   
+The System Software can be elaborated into three major parts -   
 - Operating system (OS) - Deals with tasks of process management, memory allocation etc
-- Complier - It converts the application software to instructions that can be processed by the hardware. This set of instuctions that are available for computation is know as the **Instruction Set architecture (ISA)**. These instructions are also known as *assembly level code*. Hence the compiler is specific to the architecture.
+- Complier - It converts the application software to instructions that can be processed by the hardware. This set of instructions that are available for computation is known as the **Instruction Set Architecture (ISA)**. These instructions are also known as *assembly-level code*. Hence the compiler is specific to the architecture.
 - Assembler - It converts the instructions to the respective opcodes and thereby to binary data aka *Machine level code*, which can be understood by the digital circuit.
 
  ------
  
 ### Instructions
-There are many type of instructions  
-- Pseudo Instructions - ex. mv li ret
+There are many types of instructions  
+- Pseudo Instructions - ex. "mv" "li" "ret"
 - Base Integer Instructions ( **RV64I** - *RISC-V,64 bit-integers*, **RV32I** - *32 bit integer*)
 - Multiply extension- ex. mulw divw ( **RV64M**)
-- Single precision floating point Instruction - instruction is usually starts with an f. Ex  
+- Single precision floating point Instruction - instruction usually starts with an "f". Ex  
