@@ -65,15 +65,15 @@ There are many types of instructions
 -----
 ### Commands to compile a C code
 To create a program file (file_name.c)
-'''
+```
 gedit file_name.c
-'''
+```
 To compile the program 
-'''
+```
 gcc file_name.c
-'''
+```
 To print the output 
-'''
+```
 ./a.out
-'''
+```
 
