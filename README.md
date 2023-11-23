@@ -1,11 +1,11 @@
-# RSIC-V
+# RISC-V
 
-### Introdcution to ***Instruction Set Architeture (ISA)***
-An Instruction Set Architecture (ISA) is the interface between the hardware and the software. It describes how excatly the hardware funtions according to the software.  
+### Introduction to ***Instruction Set Architecture (ISA)***
+An Instruction Set Architecture (ISA) is the interface between the hardware and the software. It describes how exactly the hardware functions according to the software.  
 It gives us a view of -   
-- What are the various instructions are available?
+- What are the various instructions available?
 - What is the function of each instruction?
-- How does the particular instruction acheive the specified task?
+- How does the particular instruction achieve the specified task?
 
 A few famous ISAs include - 
 - **x86**: Developed by Intel and AMD, x86 is one of the most widely used ISAs in personal computers and servers. It has a complex instruction set (CISC) and is known for its *compatibility with a large number of software applications*.
@@ -44,7 +44,7 @@ The differences between RISC and CISC are shown
 | MUL 2:2,3:3 | LOAD A,2:2 <br /> LOAD B,3:3 <br /> PROD A,B <br /> STORE 2:2,A |  
 --------
 The whole system can be understood as three parts    
-- *Application Software* - The C code written for the app. ( ex - The c code for a stopwatch app)  
+- *Application Software* - The C code written for the app. ( ex - The C code for a stopwatch app)  
 - *System Software* - The code which interprets the Application software to produce machine-level instructions as the final output
 - *Hardware* - The Processor (actual circuit)
   
@@ -60,4 +60,20 @@ There are many types of instructions
 - Pseudo Instructions - ex. "mv" "li" "ret"
 - Base Integer Instructions ( **RV64I** - *RISC-V,64 bit-integers*, **RV32I** - *32 bit integer*)
 - Multiply extension- ex. mulw divw ( **RV64M**)
-- Single precision floating point Instruction - instruction usually starts with an "f". Ex  
+- Single and double precision floating point Instruction - instruction usually starts with an "f". Ex "flw","fadd" ( **RV64F** - Single precision, **RV64D** - Double precision)
+- The keywords used to address the specific registers used in the instructions are known as the **application-specific binary interface - (ABI)**
+-----
+### Commands to compile a C code
+To create a program file (file_name.c)
+'''
+gedit file_name.c
+'''
+To compile the program 
+'''
+gcc file_name.c
+'''
+To print the output 
+'''
+./a.out
+'''
+
