@@ -71,7 +71,7 @@ A few basics to know
 32 bits = 8  nibbles = 4 bytes = 1 word  
 64 bits = 16 nibbles = 8 bytes = 2 words = 1 double-word  
 
-Rule for range of signed and unsigned numbers: (where n represents the number of bits)  
+Rule for range of signed and unsigned numbers: (where n represents the number of bits)
 
 | unsigned | 0 to (2^n)-1 | For n = 4, range = 0 to 15 |   
 | signed | -(2^(n-1)) to (2^(n-1))-1  | For n = 4, range = -8 to 7 |
