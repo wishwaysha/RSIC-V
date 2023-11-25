@@ -63,6 +63,18 @@ There are many types of instructions
 - Single and double precision floating point Instruction - instruction usually starts with an "f". Ex "flw","fadd" ( **RV64F** - Single precision, **RV64D** - Double precision)
 - The keywords used to address the specific registers used in the instructions are known as the **application-specific binary interface - (ABI)**
 -----
+### Representation of signed and unsigned numbers in 64-bit  architecture  
+A few basics to know
+4  bits = 1  nibble  
+8  bits = 2  nibbles = 1 byte  
+32 bits = 8  nibbles = 4 bytes = 1 word  
+64 bits = 16 nibbles = 8 bytes = 2 words = 1 double-word  
+
+Rule for range of signed and unsigned numbers: (where n represents the number of bits)  
+
+- For unsigned numbers range = 0 to (2^n)-1                Eg. For n = 4, range = 0 to 15   
+- For signed numbers range   = -(2^(n-1)) to (2^(n-1))-1   Eg. For n = 4, range = -8 to 7  
+-----
 ### Commands to compile a C code
 To create a program file (file_name.c)
 ```
